@@ -1,7 +1,30 @@
 #profile_img {
-  margin: 32dp;
+  margin: 320dp;
 }
 
-#heading1{
-  margin-top: 1000dp;
+#content{
+  margin: 0 auto;
+  display: block;
+}
+
+body {
+  background: #263238;
+  margin-top: 2.0em;
+
+}
+
+h1 {
+  color: #FAFAFA;
+}
+
+img {
+  margin-top: 2.0em;
+  margin-bottom: 2.5em;
+}
+
+a {
+  color: #ECEFF1;
+  font-size: 1.0em;
+
+
 }
