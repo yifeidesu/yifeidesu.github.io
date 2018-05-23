@@ -2,7 +2,7 @@
   margin: 320dp;
 }
 
-#content{
+#content {
   margin: 0 auto;
   display: block;
 }
@@ -10,21 +10,24 @@
 body {
   background: #263238;
   margin-top: 2.0em;
-
+  color: #ECEFF1;
 }
 
+
 h1 {
-  color: #FAFAFA;
+  color: white;
 }
 
 img {
   margin-top: 2.0em;
-  margin-bottom: 2.5em;
+  margin-bottom: 3.0em;
 }
 
 a {
   color: #ECEFF1;
   font-size: 1.0em;
+}
 
-
+#bio {
+  color: #B0BEC5;
 }

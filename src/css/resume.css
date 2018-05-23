@@ -1,0 +1,65 @@
+#top-nav{
+  padding-left: 5.0rem;
+  padding-right: 5.0rem;
+  height: 5rem;  
+  color: white;
+  background: black;
+}
+
+#top-nav-ic-img {
+  width: 1.5m;
+  height: 1.5em;
+  margin-right: 0.8em;
+}
+
+#sidebar-div {
+  position: sticky;
+  height: 100%;
+  padding: 2rem 0 0 5rem;
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  font-weight: 500;
+}
+
+main div h5 {
+  margin: 0 0 1rem 0;
+  
+}
+
+div p {
+  margin: 0 0 2rem 1rem;
+  line-height: 2rem;
+  font-size: 0.9rem;
+}
+
+.container-fluid, .container-fluid .row, .navbar {
+  height: 100%;
+}
+
+#sidebar-div ul li a{
+  color: black;
+  opacity: 0.8;
+  font-size: 0.8em;
+}
+
+#sidebar-div ul li{
+  margin: 0 0 0.8rem 0;
+}
+
+div {
+  display: block;
+}
+
+/* debug */
+#sudebar{
+  background: greenyellow;
+}
+
+
+
+
