@@ -1,13 +1,12 @@
-#top-nav{
-  padding-left: 5.0rem;
-  padding-right: 5.0rem;
-  height: 5rem;  
-  color: white;
+#topbar{
+  padding: 0 5rem 0 10rem;
+  height: 4rem;
   background: black;
+  font-size: 18px; 
 }
 
-#top-nav-ic-img {
-  width: 1.5m;
+#topbar-ic-img {
+  width: 1.5em;
   height: 1.5em;
   margin-right: 0.8em;
 }
@@ -15,26 +14,33 @@
 #sidebar-div {
   position: sticky;
   height: 100%;
-  padding: 2rem 0 0 5rem;
+  padding: 1rem 6rem 0 10rem;
+  font-weight: 500;
+}
+
+#sidebar-div ul h6 {
+  font-size: smaller;
+  padding: 2rem 0 0.6rem 0;
+}
+
+#main-div {
+  padding: 0 6rem 0 6rem;
 }
 
 html, body{
   height: 100%;
 }
 
-body {
-  font-weight: 500;
-}
-
 main div h5 {
-  margin: 0 0 1rem 0;
-  
+  margin: 0 0 1.5rem 0;
 }
 
 div p {
-  margin: 0 0 2rem 1rem;
+  margin: 0 0 5rem 1rem;
   line-height: 2rem;
   font-size: 0.9rem;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .container-fluid, .container-fluid .row, .navbar {
@@ -54,12 +60,3 @@ div p {
 div {
   display: block;
 }
-
-/* debug */
-#sudebar{
-  background: greenyellow;
-}
-
-
-
-
