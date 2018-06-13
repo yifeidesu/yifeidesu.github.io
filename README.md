@@ -1,1 +1,1 @@
-## [Click to visit portfolio](https://yifeidesu.github.io/)
+## :zap: [Click to visit portfolio](https://yifeidesu.github.io/) :zap:
