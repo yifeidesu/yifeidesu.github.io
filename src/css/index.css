@@ -5,8 +5,8 @@ body {
 }
 
 .bg-1 { 
-    background-color: #32FC8D; /* Green */
-    color: #ffffff;
+    background-color: rgb(164, 255, 235); /* Green */
+    color: rgba(0, 0, 0, 0.8);
     
 }
 .bg-2 { 
