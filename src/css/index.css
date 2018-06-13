@@ -71,12 +71,13 @@ footer a i {
 }
 
 .bg-1 { 
-    background-color: #00E676; /* Green */
+    background-color: rgb(110, 255, 97); /* Green */
     color: #ffffff;
+    
 }
 .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
+    background-color: #455A64; /* Dark Blue */
+    color: #ffffffaf;
 }
 .bg-3 { 
     background-color: #ffffff; /* White */
