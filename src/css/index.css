@@ -5,7 +5,7 @@ body {
 }
 
 .bg-1 { 
-    background-color: #00E676; /* Green */
+    background-color: #32FC8D; /* Green */
     color: #ffffff;
     
 }
@@ -62,6 +62,10 @@ li a {
 h3 {
   font-size: 3rem;
   font-weight: 900;
+}
+
+#greeting-p {
+    font-size: 5rem;
 }
 
 /* h3 after img */
