@@ -75,6 +75,7 @@ img + h3 {
 
 /* img after h3 */
 h3 + img {
+    border-radius: 50%;
     object-fit: cover;
 }
 
