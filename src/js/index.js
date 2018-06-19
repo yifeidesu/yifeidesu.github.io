@@ -21,7 +21,7 @@ const favoPlaces = new Project(
     'FavoPlaces',
     'Integrated with Google Map API. User can sign up, search for interests and save to collection.',
     './src/assets/favos.jpg',
-    'https://github.com/yifeidesu',
+    'https://github.com/yifeidesu/favoplaces',
     ['JavaScript','jQuery', 'Bootstrap', 'Node.js','Express', 'Passport.js', 'MongoDB', 'Heroku',  'Pug', 'Map API'],
     'https://favoplaces.herokuapp.com/',
     'https://github.com/yifeidesu/favoplaces'
@@ -31,30 +31,30 @@ const coinApp = new Project(
     'CoinApp',
     'Display and refresh for realtime bitcoin price index. Display historical data for week, month and year.',
     './src/assets/coinapp.png',
-    'https://yifeidesu.github.io/charts/mon',
+    'https://yifeidesu.github.io/coinapp',
     ['JavaScript','Node.js', 'Bootstrap', 'React', 'React Router', 'Axios', 'Chart.js'],
     'https://yifeidesu.github.io/coinapp',
     'https://github.com/yifeidesu/coinapp');
 
 const twitterClient = new Project(
-    'Bit for Twitter',
-    'A Twitter client Android app with different UI design.',
+    'Bit for Twitter, Android',
+    'A Twitter client app with different UI design.',
     './src/assets/twitterbit.jpg',
     'https://github.com/yifeidesu/TwitterClientApp',
-    ['RxJava', 'MVVM', 'Data binding', 'Java', 'Kotlin'],
+    ['RxJava', 'Twitter SDK', 'MVVM', 'Data binding', 'Java', 'Kotlin'],
     'https://play.google.com/store/apps/details?id=com.robyn.bitty',
     'https://github.com/yifeidesu/TwitterClientApp');
 
 const dayPlus = new Project(
-    'DayPlus',
-    'An Android App that helps uers track their big days.',
+    'DayPlus, Android',
+    'With users count down/count up their big days. ',
     './src/assets/pj_dayplus.jpg',
     'https://github.com/yifeidesu/DayPlus-Countdown',
     ['MVP', 'MySQL', 'Java', 'Kotlin']);
 
 const imgurApp = new Project(
-    'An Android Imgur client app.',
-    'An Android Imgur client app.',
+    'MyImgur, Android',
+    'An Imgur client app.',
     './src/assets/pj_im.jpg',
     'https://github.com/yifeidesu/MyImgurApp',
     ['RxJava', 'Retrofit', 'Gson', 'MVVM', 'Java', 'Kotlin']);
