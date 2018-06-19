@@ -50,14 +50,18 @@ const dayPlus = new Project(
     'With users count down/count up their big days. ',
     './src/assets/pj_dayplus.jpg',
     'https://github.com/yifeidesu/DayPlus-Countdown',
-    ['MVP', 'MySQL', 'Java', 'Kotlin']);
+    ['MVP', 'MySQL', 'Java', 'Kotlin'],
+'https://play.google.com/store/apps/details?id=com.robyn.dayplus2',
+'https://github.com/yifeidesu/DayPlus-Countdown');
 
 const imgurApp = new Project(
     'MyImgur, Android',
     'An Imgur client app.',
     './src/assets/pj_im.jpg',
     'https://github.com/yifeidesu/MyImgurApp',
-    ['RxJava', 'Retrofit', 'Gson', 'MVVM', 'Java', 'Kotlin']);
+    ['RxJava', 'Retrofit', 'Gson', 'MVVM', 'Java', 'Kotlin'],
+'',
+'https://github.com/yifeidesu/MyImgurApp');
 
 console.log(projects);
 
