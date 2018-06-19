@@ -22,18 +22,17 @@ const favoPlaces = new Project(
     'Integrated with Google Map API. User can sign up, search for interests and save to collection.',
     './src/assets/favos.jpg',
     'https://github.com/yifeidesu',
-    ['MongoDB', 'Express','Heroku', 'Passport.js', 'Pug'],
+    ['JavaScript','jQuery', 'Bootstrap', 'Node.js','Express', 'Passport.js', 'MongoDB', 'Heroku',  'Pug', 'Map API'],
     'https://favoplaces.herokuapp.com/',
     'https://github.com/yifeidesu/favoplaces'
 );
 
-
 const coinApp = new Project(
     'CoinApp',
-    'Get realtime/historical prices data from API. React, React Router, Chart.js',
+    'Display and refresh for realtime bitcoin price index. Display historical data for week, month and year.',
     './src/assets/coinapp.png',
     'https://yifeidesu.github.io/charts/mon',
-    ['React', 'React Router', 'Chart.js'],
+    ['JavaScript','Node.js', 'Bootstrap', 'React', 'React Router', 'Axios', 'Chart.js'],
     'https://yifeidesu.github.io/coinapp',
     'https://github.com/yifeidesu/coinapp');
 
@@ -42,7 +41,7 @@ const twitterClient = new Project(
     'A Twitter client Android app with different UI design.',
     './src/assets/twitterbit.jpg',
     'https://github.com/yifeidesu/TwitterClientApp',
-    ['RxJava', 'MVVM', 'Data binding'],
+    ['RxJava', 'MVVM', 'Data binding', 'Java', 'Kotlin'],
     'https://play.google.com/store/apps/details?id=com.robyn.bitty',
     'https://github.com/yifeidesu/TwitterClientApp');
 
@@ -51,14 +50,14 @@ const dayPlus = new Project(
     'An Android App that helps uers track their big days.',
     './src/assets/pj_dayplus.jpg',
     'https://github.com/yifeidesu/DayPlus-Countdown',
-    ['MVP', 'MySQL']);
+    ['MVP', 'MySQL', 'Java', 'Kotlin']);
 
 const imgurApp = new Project(
     'An Android Imgur client app.',
     'An Android Imgur client app.',
     './src/assets/pj_im.jpg',
     'https://github.com/yifeidesu/MyImgurApp',
-    ['RxJava', 'Gson', 'MVVM']);
+    ['RxJava', 'Retrofit', 'Gson', 'MVVM', 'Java', 'Kotlin']);
 
 console.log(projects);
 
@@ -72,13 +71,6 @@ cellsHtml += andMoreHtml();
 
 document.getElementById("cells").innerHTML = cellsHtml;
 
-// SELF INTRODUCE
-const selfIntro = 'I’m a front Web Developer based in Toronto. <br/>' +
-    'My goal is to build elegant and accessible web applications. <br/>' +
-    'I love innovations and enjoy getting and applying new skills.'
-
-document.getElementById('intro').innerHTML = selfIntro;
-
 function getCellHtml(project) {
     const badgesHtml = getBadgesHtml(project);
     const sitesHtml = getSitesHtml(project);
@@ -88,9 +80,9 @@ function getCellHtml(project) {
         '<div class="cell" onclick="window.location.href=\'' + project.pageLink + '\'">' +
         '<p>' +
         '<span class="pj-name">' + project.name + '</span><br/>' +
-        '<span class="desc">' + project.desc + '</span><br/>' +
-        '' + badgesHtml + '<br/>' +
-        '<span class="site">' + sitesHtml + '</span>' +
+        '<span class="desc">' + project.desc + '<br/></span><br/>' +
+        badgesHtml + '<br/>' +
+        sitesHtml +
         '</p>' +
         '<img src="' + project.imageSrc + '" class="cell-img img-responsive margin" style="width:100%" alt="Image">' +
         '</div></div>';
@@ -105,15 +97,6 @@ function getBadgesHtml(project) {
     });
 
     return badges;
-}
-
-function andMoreHtml() {
-    const more =
-        '<div id="last-cell" class="col-lg-6"' +
-        'onclick="window.location.href=\'https://github.com/yifeidesu\'">' +
-        '<h3>And more...</h3></div>';
-
-    return more;
 }
 
 function getSitesHtml(project) {
@@ -131,3 +114,25 @@ function getSitesHtml(project) {
 
     return sitesHtml;
 }
+
+function andMoreHtml() {
+    const more =
+        '<div id="last-cell" class="col-lg-6 text-center"' +
+        'onclick="window.location.href=\'https://github.com/yifeidesu\'">' +
+        '<h3>And more...</h3></div>';
+
+    return more;
+}
+
+
+/******************
+ * SELF INTRODUCE *
+ ******************/
+const selfIntro =
+    'I’m a Web Developer based in Toronto. <br/>' +
+    'My goal is to build elegant and accessible web applications and let them help users\' life. ' +
+    'I love coding and enjoy getting and applying new skills.' +
+    '<br/>My skillset includes JavaScript, HTML, CSS, Bootstrap, jQuery, Node.js, Express, React, MongoDB, MySQL, Java, Kotlin and more. ' +
+    '<br/>Scroll down to see my projects! '
+
+document.getElementById('intro').innerHTML = selfIntro;
