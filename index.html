@@ -12,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./src/css/index.css">
+
 </head>
 
 <body>
@@ -50,77 +51,48 @@
     </div>
   </nav>
 
-  <!-- Greeting Container -->
-  <div id='greeting-div' class="container-fluid bg-1 text-center">
-    <h3 id='greeting-p' class="margin heading">Hi! I'm Yifei.</h3>
-    <img id='profile-img' src="./src/assets/me_ic.jpg" 
-    class="img-responsive img-circle margin" style="display:inline" alt="profile image"
-      width="90" height="90">
-    <h3>- Welcome to my portfolio -</h3>
-  </div>
-
-  <!-- About Me Container -->
-  <div class="container-fluid bg-2 text-center">
-    <h3 class="margin">- Stack -</h3>
-    <p>JavaScript, HTML, CSS, JSON, XML;
-      Node.js, Java, Kotlin;<br>
-      Databases: MySQL, MongoDB;<br>
-      Vision Control: Git;<br>
-      IDE: Visual Studio Code, Android Studio</p>
+  <!-- Self Introduce Container -->
+  <div id='greeting-div' class="container-fluid bg-1">
+    <div id='greeting-content'>
+      <h3 id='greeting-p' class="text-center margin">Hi! I'm Yifei.</h3>
+      <div class='container'>
+        <div id='intro-div' class=''>
+          <div class='col-lg-3'>
+            <img id='profile-img' src="./src/assets/me_ic.jpg" class="img-responsive img-circle margin" style="display:inline" alt="profile image"
+              width="90" height="90">
+          </div>
+          <div class='col-lg-9'>
+            <p id='intro'>- Welcome to my portfolio -</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Projects Container (Grid) -->
-  <div id='projects-div' class="container-fluid bg-3 text-center">
-    <h3 class="margin">- Projects -</h3>
+  <div id='projects-div' class="container-fluid bg-3">
+    <h3 class="margin text-center">- Projects -</h3>
     <br>
-    <div class="row">
-      <div class="col-sm-4">
-        <div onclick="window.location.href='https://favoplaces.herokuapp.com/'">
-          <h3>FavoPlaces</h3>
-          <p>
-            A Map API App collects friends' favorite places.
-          </p>
-          <img src="./src/assets/favos.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-        </div>
-      </div>
 
-      <div class="col-sm-4" onclick="window.location.href='https://yifeidesu.github.io/charts/mon'">
-        <div>
-          <h3>CoinApp</h3>
-          <p>Get realtime/historical prices data from API. React, React Router, Chart.js</p>
-          <img src="./src/assets/coinapp.png" class="img-responsive margin" style="width:100%" alt="Image">
-        </div>
-      </div>
-
-      <div class="col-sm-4" onclick="window.location.href='https://github.com/yifeidesu/TwitterClientApp'">
+    <div id='cells' class="row row-eq-height">
+      <!-- CELL TEMPLATE PREV -->
+      <!-- <div class="col-sm-4" onclick="window.location.href='https://github.com/yifeidesu/TwitterClientApp'">
         <div>
           <h3>Bit for Twitter</h3>
           <p>A Twitter client Android app with different UI design.</p>
           <img src="./src/assets/twitterbit.jpg" class="img-responsive margin" style="width:100%" alt="Image">
         </div>
-      </div>
-
-      <div class="col-sm-4" onclick="window.location.href='https://github.com/yifeidesu/DayPlus-Countdown'">
-        <div>
-          <h3>DayPlus</h3>
-          <p>An Android App that helps uers track their big days.</p>
-          <img src="./src/assets/pj_dayplus.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-        </div>
-      </div>
-
-      <div class="col-sm-4" onclick="window.location.href='https://github.com/yifeidesu/MyImgurApp'">
-        <div>
-          <h3>MyImgur</h3>
-          <p>An Android Imgur client app.</p>
-          <img src="./src/assets/pj_im.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-        </div>
-      </div>
-
-      <div id='last-cell' class="col-sm-4" onclick="window.location.href='https://github.com/yifeidesu'">
-        <h3>And more...</h3>
-      </div>
-
+      </div>  -->
     </div>
+  </div>
+
+  <!-- Stack Container -->
+  <div class="container-fluid bg-5 text-center">
+    <h3 class="margin">- Stack -</h3>
+    <p>JavaScript, HTML, CSS, JSON, XML; Node.js, Java, Kotlin;
+      <br> Databases: MySQL, MongoDB;
+      <br> Vision Control: Git;
+      <br> IDE: Visual Studio Code, Android Studio</p>
   </div>
 
   <!-- Contact Container -->
@@ -141,6 +113,7 @@
     <a href="https://www.linkedin.com/in/yifeidesu/">
       <i class='fab fa-linkedin'></i> LinkedIn</a>
   </footer>
+  <script src="./src/js/index.js"></script>
 
 </body>
 
