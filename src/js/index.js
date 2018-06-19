@@ -22,7 +22,7 @@ const favoPlaces = new Project(
     'Integrated with Google Map API. User can sign up, search for interests and save to collection.',
     './src/assets/favos.jpg',
     'https://github.com/yifeidesu/favoplaces',
-    ['JavaScript','jQuery', 'Bootstrap', 'Node.js','Express', 'Passport.js', 'MongoDB', 'Heroku',  'Pug', 'Map API'],
+    ['JavaScript', 'jQuery', 'Bootstrap', 'Node.js', 'Express', 'Passport.js', 'MongoDB', 'Heroku', 'Pug', 'Map API'],
     'https://favoplaces.herokuapp.com/',
     'https://github.com/yifeidesu/favoplaces'
 );
@@ -32,7 +32,7 @@ const coinApp = new Project(
     'Display and refresh for realtime bitcoin price index. Display historical data for week, month and year.',
     './src/assets/coinapp.png',
     'https://yifeidesu.github.io/coinapp',
-    ['JavaScript','Node.js', 'Bootstrap', 'React', 'React Router', 'Axios', 'Chart.js'],
+    ['JavaScript', 'Node.js', 'Bootstrap', 'React', 'React Router', 'Axios', 'Chart.js'],
     'https://yifeidesu.github.io/coinapp',
     'https://github.com/yifeidesu/coinapp');
 
@@ -51,8 +51,8 @@ const dayPlus = new Project(
     './src/assets/pj_dayplus.jpg',
     'https://github.com/yifeidesu/DayPlus-Countdown',
     ['MVP', 'MySQL', 'Java', 'Kotlin'],
-'https://play.google.com/store/apps/details?id=com.robyn.dayplus2',
-'https://github.com/yifeidesu/DayPlus-Countdown');
+    'https://play.google.com/store/apps/details?id=com.robyn.dayplus2',
+    'https://github.com/yifeidesu/DayPlus-Countdown');
 
 const imgurApp = new Project(
     'MyImgur, Android',
@@ -60,8 +60,8 @@ const imgurApp = new Project(
     './src/assets/pj_im.jpg',
     'https://github.com/yifeidesu/MyImgurApp',
     ['RxJava', 'Retrofit', 'Gson', 'MVVM', 'Java', 'Kotlin'],
-'',
-'https://github.com/yifeidesu/MyImgurApp');
+    '',
+    'https://github.com/yifeidesu/MyImgurApp');
 
 console.log(projects);
 
@@ -82,12 +82,11 @@ function getCellHtml(project) {
     const cellHtml =
         '<div class="col-lg-6">' +
         '<div class="cell" onclick="window.location.href=\'' + project.pageLink + '\'">' +
-        '<p>' +
-        '<span class="pj-name">' + project.name + '</span><br/>' +
-        '<span class="desc">' + project.desc + '<br/></span><br/>' +
-        badgesHtml + '<br/>' +
-        sitesHtml +
-        '</p>' +
+
+        '<p class="pj-name">' + project.name + '</p>' +
+        '<p class="desc">' + project.desc + '</p>' +
+        '<p>' + badgesHtml + '</p>' +
+        '<p>' + sitesHtml + '</p>' +
         '<img src="' + project.imageSrc + '" class="cell-img img-responsive margin" style="width:100%" alt="Image">' +
         '</div></div>';
     return cellHtml;
