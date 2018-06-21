@@ -31,9 +31,9 @@ const coinApp = new Project(
     'CoinApp',
     'Integrate with a bitcoin price API. Display and refresh for realtime bitcoin price. Display historical price fluctuation in line graphs for week, month and year.',
     './src/assets/coinapp.png',
-    'https://yifeidesu.github.io/coinapp',
+    'https://yifeidesu.github.io/coinapp/',
     ['JavaScript', 'Node.js', 'Bootstrap', 'React', 'React Router', 'Axios', 'Chart.js'],
-    'https://yifeidesu.github.io/coinapp',
+    'https://yifeidesu.github.io/coinapp/',
     'https://github.com/yifeidesu/coinapp');
 
 const twitterClient = new Project(
