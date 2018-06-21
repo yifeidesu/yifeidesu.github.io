@@ -77,7 +77,8 @@ h3 {
     100%  { left: 0px; top: 0px;}
 }
 #greeting-div {
-    height: 88vh;
+    min-height: 88vh;
+    height: auto;
 }
 
 #greeting-content {
