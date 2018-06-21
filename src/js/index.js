@@ -19,7 +19,7 @@ class Project {
 
 const favoPlaces = new Project(
     'FavoPlaces',
-    'Integrated with Google Map API. User can sign up, search for interests and save to collection.',
+    'User can sign up, search for interests with integrated Google Places service and save picked location items to collection.',
     './src/assets/favos.jpg',
     'https://github.com/yifeidesu/favoplaces',
     ['JavaScript', 'jQuery', 'Bootstrap', 'Node.js', 'Express', 'Passport.js', 'MongoDB', 'Heroku', 'Pug', 'Map API'],
@@ -29,7 +29,7 @@ const favoPlaces = new Project(
 
 const coinApp = new Project(
     'CoinApp',
-    'Display and refresh for realtime bitcoin price index. Display historical data for week, month and year.',
+    'Integrate with a bitcoin price API. Display and refresh for realtime bitcoin price. Display historical price fluctuation in line graphs for week, month and year.',
     './src/assets/coinapp.png',
     'https://yifeidesu.github.io/coinapp',
     ['JavaScript', 'Node.js', 'Bootstrap', 'React', 'React Router', 'Axios', 'Chart.js'],
@@ -38,16 +38,16 @@ const coinApp = new Project(
 
 const twitterClient = new Project(
     'Bit for Twitter, Android',
-    'A Twitter client app with different UI design.',
+    'A Twitter client app with different UI design. Users can sign in with their account, and do actions including view home timeline, make favorite, post tweet. Use Retrofit and RxJava to make HTTP request, and receive and parse response. Use data-binding to bind data to XML layouts.',
     './src/assets/twitterbit.jpg',
     'https://github.com/yifeidesu/TwitterClientApp',
-    ['RxJava', 'Twitter SDK', 'MVVM', 'Data binding', 'Java', 'Kotlin'],
+    ['RxJava', 'Retrofit', 'Twitter SDK', 'MVVM', 'Data binding', 'Java', 'Kotlin'],
     'https://play.google.com/store/apps/details?id=com.robyn.bitty',
     'https://github.com/yifeidesu/TwitterClientApp');
 
 const dayPlus = new Project(
     'DayPlus, Android',
-    'With users count down/count up their big days. ',
+    'Count down/count up users\' big days. Index screen show all events in a list, sorted by selected option. Detail view show event infomation with a user customized background from user gallery. Structure in MVP, makes project modular and good to maintain.',
     './src/assets/pj_dayplus.jpg',
     'https://github.com/yifeidesu/DayPlus-Countdown',
     ['MVP', 'MySQL', 'Java', 'Kotlin'],
@@ -56,7 +56,7 @@ const dayPlus = new Project(
 
 const imgurApp = new Project(
     'MyImgur, Android',
-    'An Imgur client app.',
+    'An Imgur client app integrated with Imgur API. User can view viral or most recent image list without login, and click item to view image in whole screen.',
     './src/assets/pj_im.jpg',
     'https://github.com/yifeidesu/MyImgurApp',
     ['RxJava', 'Retrofit', 'Gson', 'MVVM', 'Java', 'Kotlin'],
@@ -80,13 +80,16 @@ function getCellHtml(project) {
     const sitesHtml = getSitesHtml(project);
 
     const cellHtml =
-        '<div class="col-lg-6">' +
-        '<div class="cell" onclick="window.location.href=\'' + project.pageLink + '\'">' +
 
+
+        '<div class="cell row" onclick="window.location.href=\'' + project.pageLink + '\'">' +
+        '<div class="col-lg-6">' +
         '<p class="pj-name">' + project.name + '</p>' +
         '<p class="desc">' + project.desc + '</p>' +
         '<p>' + badgesHtml + '</p>' +
         '<p>' + sitesHtml + '</p>' +
+        '</div>' +
+        '<div class="col-lg-6">' +
         '<img src="' + project.imageSrc + '" class="cell-img img-responsive margin" style="width:100%" alt="Image">' +
         '</div></div>';
     return cellHtml;
@@ -120,7 +123,7 @@ function getSitesHtml(project) {
 
 function andMoreHtml() {
     const more =
-        '<div id="last-cell" class="col-lg-6 text-center"' +
+        '<div id="last-cell" class="col-lg-12 text-center"' +
         'onclick="window.location.href=\'https://github.com/yifeidesu\'">' +
         '<h3>And more...</h3></div>';
 
