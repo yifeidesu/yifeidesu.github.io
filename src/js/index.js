@@ -80,9 +80,7 @@ function getCellHtml(project) {
     const sitesHtml = getSitesHtml(project);
 
     const cellHtml =
-
-
-        '<div class="cell row" onclick="window.location.href=\'' + project.pageLink + '\'">' +
+        '<div class="cell row">' +
         '<div class="col-lg-6">' +
         '<p class="pj-name">' + project.name + '</p>' +
         '<p class="desc">' + project.desc + '</p>' +
@@ -90,7 +88,7 @@ function getCellHtml(project) {
         '<p>' + sitesHtml + '</p>' +
         '</div>' +
         '<div class="col-lg-6">' +
-        '<img src="' + project.imageSrc + '" class="cell-img img-responsive margin" style="width:100%" alt="Image">' +
+        '<img src="' + project.imageSrc + '" class="cell-img img-responsive margin" onclick="window.location.href=\'' + project.pageLink + '\'" style="width:100%" alt="Image">' +
         '</div></div>';
     return cellHtml;
 }

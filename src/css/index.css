@@ -120,6 +120,7 @@ img.cell-img {
     object-fit: cover;
     margin: 0!important;
     padding: 0;
+    cursor: pointer;
 }
 
 .col-sm-4 div {
@@ -151,7 +152,7 @@ img.cell-img {
     padding: 4rem;
     background-color: white;
     box-shadow: 2px 2px 2px #bdbdbd;
-    cursor: pointer;
+    
 }
 
 .cell:hover {
