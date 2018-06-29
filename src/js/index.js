@@ -36,6 +36,15 @@ const coinApp = new Project(
     'https://yifeidesu.github.io/coinapp/',
     'https://github.com/yifeidesu/coinapp');
 
+const imgurApp = new Project(
+    'MyWeather',
+    'Forecast web app. User have a list of cities showing current weather. Click city item, page will display 5-day forecast in charts.',
+    './src/assets/myweahter.jpg',
+    'https://github.com/yifeidesu/myweather',
+    ['Angular', 'RxJS', 'TypeScript', 'HTML', 'CSS', 'Chart.js'],
+    'https://yifeidesu.github.io/myweather/',
+    'https://github.com/yifeidesu/myweather');
+
 const twitterClient = new Project(
     'Bit for Twitter, Android',
     'A Twitter client app with different UI design. Users can sign in with their account, and do actions including view home timeline, make favorite, post tweet. Use Retrofit and RxJava to make HTTP request, and receive and parse response. Use data-binding to bind data to XML layouts.',
@@ -63,7 +72,6 @@ const imgurApp = new Project(
     '',
     'https://github.com/yifeidesu/MyImgurApp');
 
-console.log(projects);
 
 let cellsHtml = '';
 projects.forEach((project) => {
