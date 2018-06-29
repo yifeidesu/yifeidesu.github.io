@@ -36,7 +36,7 @@ const coinApp = new Project(
     'https://yifeidesu.github.io/coinapp/',
     'https://github.com/yifeidesu/coinapp');
 
-const imgurApp = new Project(
+const myWeahter = new Project(
     'MyWeather',
     'Forecast web app. User have a list of cities showing current weather. Click city item, page will display 5-day forecast in charts.',
     './src/assets/myweahter.jpg',
