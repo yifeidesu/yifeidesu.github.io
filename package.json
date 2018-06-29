@@ -1,0 +1,21 @@
+{
+  "name": "yifeidesu.github.io",
+  "version": "1.0.0",
+  "description": "Yifei's portfolio",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yifeidesu/yifeidesu.github.io.git"
+  },
+  "author": "Yifei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yifeidesu/yifeidesu.github.io/issues"
+  },
+  "homepage": "https://github.com/yifeidesu/yifeidesu.github.io"
+}

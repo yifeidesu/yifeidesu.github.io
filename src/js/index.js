@@ -1,3 +1,7 @@
+var gemoji = require('gemoji')
+ 
+console.log(gemoji.name.cat);
+
 const projects = [];
 
 // projects index
