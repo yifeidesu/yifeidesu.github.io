@@ -39,7 +39,7 @@ const coinApp = new Project(
 const myWeahter = new Project(
     'MyWeather',
     'Forecast web app. User have a list of cities showing current weather. Click city item, page will display 5-day forecast in charts.',
-    './src/assets/myweahter.jpg',
+    './src/assets/myweather.png',
     'https://github.com/yifeidesu/myweather',
     ['Angular', 'RxJS', 'TypeScript', 'HTML', 'CSS', 'Chart.js'],
     'https://yifeidesu.github.io/myweather/',
@@ -144,7 +144,17 @@ const selfIntro =
     'I’m a Web Developer based in Toronto. <br/>' +
     'My goal is to build elegant and accessible web applications and let them help users\' life. ' +
     'I love coding and enjoy getting and applying new skills.' +
-    '<br/>My skillset includes JavaScript, HTML, CSS, Bootstrap, jQuery, Node.js, Express, React, MongoDB, MySQL, Java, Kotlin and more. ' +
-    '<br/>Scroll down to see my projects! '
+    '<br/>My skillset includes JavaScript, HTML, CSS, Bootstrap, jQuery, Node.js, Express, React, Angular, MongoDB, MySQL, Java, Kotlin <a href="#skillset-div">and more</a>. ' +
+    '<br/>Scroll down to see my projects! &#10024;'
 
 document.getElementById('intro').innerHTML = selfIntro;
+
+/************
+ * SKILLSET *
+ ************/
+const skillset =
+    "&#9889; Languages & Software: JavaScript, HTML, CSS, JSON, MySQL, MongoDB, Java, Kotlin<br />" +
+    "&#9889; Library & Framework: Bootstrap, jQuery, Node.js, Express, Axios, React, Angular<br />" +
+    "&#9889; IDE & Tool: Visual Studio Code, Android Studio, Git"
+
+document.getElementById('skillset').innerHTML = skillset;
