@@ -19,7 +19,7 @@ class Project {
 
 const favoPlaces = new Project(
     'FavoPlaces',
-    'User can sign up, search for interests with integrated Google Places service and save picked location items to collection.',
+    'Full-stack application, integrated with Google Places API. User can sign up account, search places and save to collection, leave comments to picked places.',
     './src/assets/favos.jpg',
     'https://github.com/yifeidesu/favoplaces',
     ['JavaScript', 'jQuery', 'Bootstrap', 'Node.js', 'Express', 'Passport.js', 'MongoDB', 'Heroku', 'Pug', 'Map API'],
