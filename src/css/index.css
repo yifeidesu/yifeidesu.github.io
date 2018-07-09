@@ -114,8 +114,12 @@ h3 {
     background-color: #f4f4f4
 }
 
+.col-img {
+    height: inherit;
+}
+
 img.cell-img {
-    height: inherit!important;
+    height: 100%!important;
     width: inherit;
     object-fit: cover;
     margin: 0!important;
@@ -130,7 +134,7 @@ img.cell-img {
 
 /* NEW CELL */
 #cells {
-    padding: 0 2.5rem;
+    padding: 0 0em;
 }
 
 .cell {
@@ -186,7 +190,6 @@ img.cell-img {
     color: blueviolet!important;
     background-color: rgba(198, 211, 221, 0.5);
 }
-
 
 footer a {
     padding: 2rem;
